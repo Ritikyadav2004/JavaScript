@@ -1,0 +1,28 @@
+body{
+    background-color: aqua; 
+}
+h1{
+    color: rgb(0, 44, 138);
+    text-decoration: dotted;
+    color: black;
+    
+}
+button{
+    color: aquamarine;
+    background-color: blue;
+    border: 19%;
+}
+.heading{
+   
+    text-align: center;
+    
+}
+/* #id1
+{
+    background-color: cyan;
+    color: rgb(255, 0, 0);
+    border-width: 0vi;
+    border-width: 5%;
+    border-color: black;
+    border-radius: 10px;
+} */
