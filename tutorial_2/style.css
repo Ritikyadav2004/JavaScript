@@ -8,7 +8,7 @@ h1{
     
 }
 button{
-    color: aquamarine;
+    color: rgb(19, 228, 159);
     background-color: blue;
     border: 19%;
 }
@@ -26,3 +26,14 @@ button{
     border-color: black;
     border-radius: 10px;
 } */
+
+.box
+{
+    text-align: center;
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    margin: 5px;
+    background-color: rgb(157, 245, 245);
+}
