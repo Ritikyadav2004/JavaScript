@@ -9,8 +9,10 @@ h1{
 }
 button{
     color: rgb(19, 228, 159);
-    background-color: blue;
+    background-color: rgb(0, 255, 174);
     border: 19%;
+    height: 25px;
+    width: 70px;
 }
 .heading{
    
@@ -36,4 +38,22 @@ button{
     text-align: center;
     margin: 5px;
     background-color: rgb(157, 245, 245);
+}
+
+#box
+{
+    height: 200px;
+    width: 100px;
+    background-color: bisque;
+    color: rgb(5, 15, 15);
+    border: 1px solid black;
+    text-align: center;
+}
+.content
+{
+    color: red;
+}
+
+.newclass{
+    background-color: green;
 }

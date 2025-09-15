@@ -81,15 +81,80 @@
 
 // h2.innerText=h2.innerText+"From Ritik Yadav"1
 
-let divs = document.querySelectorAll(".box")
-divs.innerHTML="hey there"
-divs[0].innerText="Me hu box 0";
-divs[1].innerText="Me hu box 1";
-divs[2].innerText="Me hu box 2";   // manual way of doing this 
-let idx=0;
-for(div of divs)
-{
-    console.log(div.innerText=`New Unique Value ${idx} `);
-    idx++;
-}
+// let divs = document.querySelectorAll(".box")
+// divs.innerHTML="hey there"
+// divs[0].innerText="Me hu box 0";
+// divs[1].innerText="Me hu box 1";
+// divs[2].innerText="Me hu box 2";   // manual way of doing this 
+// let idx=0;
+// for(div of divs)
+// {
+//     console.log(div.innerText=`New Unique Value ${idx} `);
+//     idx++;
+// }
     
+
+//getattribut method
+// let div = document.querySelector("div")
+// console.log(div);
+
+// let name = div.getAttribute("name")
+// console.log(name);
+
+// let para = document.querySelector("p")
+// // console.log(para.getAttribute("class"));
+// console.log(para.setAttribute("class","newclass"));
+
+//CHNAGINE OR PLAYING WITH BOX USING JAVASCRIPT
+// let div = document.querySelector("div")
+// div.style.backgroundColor="purple"
+// div.style.fontSize="28px"
+// div.innerText="hello"
+// div.style.visibility = "hidden";
+
+//INSERT ELEMNT FIRSRT WE HAVE TO CREATE ELEMENT THEN STORE IT
+// let newBtn=document.createElement("button")
+// // console.log(newBtn.innerText="CLICK ME ");
+// newBtn.innerText="click me "
+
+// // let div = document.querySelector("div")
+// // // div.append(newBtn)
+// // // div.prepend(newBtn)
+// // div.before(newBtn)
+// //div.after(newBtn)
+
+// let p = document.querySelector("p")
+// // p.append(newBtn)
+// p.after(newBtn)
+// craeting new elemnt 
+// let newHeading = document.createElement("h1")
+// newHeading.innerHTML = "<i> hi iam new  </i>";
+
+// document.querySelector("body").prepend(newHeading)
+
+// let para =document.querySelector("p")
+// para.remove();
+// newHeading.remove();
+
+//craete a button iof red backhround and white color
+// let button = document.createElement("button");
+// button.innerText="click me"
+// button.style.backgroundColor="red";
+// button.style.color="while"
+// console.log(button);
+// let body = document.querySelector("body");
+// body.prepend(button)
+
+//ceate a p and give it cass ans some stlying q2
+
+// let para =document.querySelector("p");
+
+
+//browser
+// para.classList.add("new")
+// undefined
+// para.classList
+// DOMTokenList(2) ['content', 'new', value: 'content new']0: "content"1: "new"length: 2value: "content new"[[Prototype]]: DOMTokenList
+// para.classList.remove("new')
+// ///VM2331:1 Uncaught SyntaxError: Invalid or unexpected tokenUnderstand this error
+// para.classList.remove("new")
