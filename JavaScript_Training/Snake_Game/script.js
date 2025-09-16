@@ -52,6 +52,7 @@ function draw() // jo bhi shape drwa honge yahi se honmbe
       pen.fillStyle = "red"
       pen.fillRect(i[0], i[1], cell, cell)//x,y,height,width
    }
+   //pen.fillStyle = "yellow"
    if(score%2==0)
    {
       pen.fillStyle = "Orange"
@@ -64,7 +65,7 @@ function draw() // jo bhi shape drwa honge yahi se honmbe
       pen.fillStyle = "magenta"
    }
    else{
-       pen.fillStyle = "golden"
+       pen.fillStyle = "gold"
    } 
    
    pen.fillRect(random[0],random[1],cell,cell)// cordinatte and sizde
@@ -110,7 +111,7 @@ function update()// eska kaam hoga new coordinate ko genrate krnme ke liye
    else{
       newX = headX;
       newY = headY + cell;
-      if(newY>50)
+      if(newY>530)
       {
          gameOver=true;
          // alert("game over")
@@ -125,6 +126,14 @@ function update()// eska kaam hoga new coordinate ko genrate krnme ke liye
    {
       snakeCells.shift() // first wale cell ko remove krdega
    }
+   for(let cell of snakeCells)
+   {
+      if(cell[0]===newX && cell[1]===newY)
+      {
+         gameOver=true;
+         return;
+      }
+   }
    snakeCells.push([newX, newY])// yteh new coordinate ko add krdega
      // first wale cell ko remove krdega
 }
@@ -132,6 +141,11 @@ function update()// eska kaam hoga new coordinate ko genrate krnme ke liye
 function genrarteRandome()
 {
    //console.log(Math.round(Math.random()*(1095/cell))*cell);
+   // do{
+   // let x = Math.floor(Math.random() * ((1095-50) / cell)) * cell;
+   // let y = Math.floor(Math.random() * ((530-50)/ cell)) * cell;
+   // let isOnSnake  = snakeCells.some(cell=>cell[0]===x && cell[1]===y);
+   // }while(isOnSnake);
    let x = Math.floor(Math.random() * ((1095-50) / cell)) * cell;
    let y = Math.floor(Math.random() * ((530-50)/ cell)) * cell;
    return [x,y];
