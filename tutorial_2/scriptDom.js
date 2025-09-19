@@ -92,7 +92,7 @@
 //     console.log(div.innerText=`New Unique Value ${idx} `);
 //     idx++;
 // }
-    
+
 
 //getattribut method
 // let div = document.querySelector("div")
@@ -158,3 +158,58 @@
 // para.classList.remove("new')
 // ///VM2331:1 Uncaught SyntaxError: Invalid or unexpected tokenUnderstand this error
 // para.classList.remove("new")
+let btn1 = document.querySelector("#btn1")
+
+// btn1.onclick = (e) => {
+//     console.log(e);
+//     console.log(e.type);
+//     console.log(e.target);
+//     console.log(e.clientX,e.clientY);
+    
+//     // console.log("Btn 1 was print");
+//     // let a = 24;
+//     // a++;
+//     // console.log(a);
+// }
+btn1.addEventListener("click",()=>{
+    console.log("button was  handler 1");
+})
+btn1.addEventListener("click",()=>{
+    console.log("button was  handler 2");
+})
+const handler_3 =()=>{
+    console.log("button was  handler 3");
+}
+btn1.addEventListener("click",handler_3);
+btn1.addEventListener("click",()=>{
+    console.log("button was  handler 4");
+})
+btn1.addEventListener("click",()=>{
+    console.log("button was  handler 5");
+})
+
+btn1.removeEventListener("click",(handler_3));
+//let div = document.querySelector("div")
+// div.onmouseover = (e) => {
+//     console.log('You Are in the div');
+//         console.log(e);
+//     console.log(e.type);
+//     console.log(e.target);
+//     console.log(e.clientX,e.clientY);i
+// }
+
+// div.addEventListener("onclick",(e)=>
+// {
+//     console.log(e.type);
+//     console.log(e.target);
+// })
+//Priority javascript quality 
+/*EVent Object :- Event object hamari is special object to the 
+Jiske Pass event K Barima Sari Sari details casey details kevo
+ event kiss type event hem yahoo Mouse Ka Event Hai yao Pointer
+  Kai event yao Keyboard Ka Evente Ka event target gag yanika 
+  event hamare button occure akar ki aai yeah input element occure
+   Akar Kiya Kya Huska Target Hamari screen*/
+//  Node.event=(e)=>{
+//     //handle heer
+//  }  
