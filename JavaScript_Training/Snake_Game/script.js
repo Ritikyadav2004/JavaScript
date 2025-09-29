@@ -12,12 +12,12 @@ let direction = "right";
 let gameOver= false; // true hogi jab width me pohoch jaygea
 let score = 0;
 
-
+let speed=200;
 let random = genrarteRandome()
 let id = setInterval(() => {
    draw()
    update()
-}, 200)
+},speed)
 
 document.addEventListener("keydown", (e) => {  //yeh pure canwas me run hogi
    // console.log("hello",e);
@@ -42,7 +42,7 @@ function draw() // jo bhi shape drwa honge yahi se honmbe
    pen.fillStyle="blue"
    pen.fillText(`Score : ${score}`,50,50)
    if(gameOver==true)
-   {
+   {  // yeh setIntervale ko rokega 
       clearInterval(id)//The clearInterval() method of the Window interface cancels a timed, repeating action which was previously established by a call to setInterval().
       pen.fillText("Game Over 😒🫥😮",450,250)
       return;
@@ -53,6 +53,8 @@ function draw() // jo bhi shape drwa honge yahi se honmbe
       pen.fillRect(i[0], i[1], cell, cell)//x,y,height,width
    }
    //pen.fillStyle = "yellow"
+   if(score>3)
+   speed=100;
    if(score%2==0)
    {
       pen.fillStyle = "Orange"
@@ -122,6 +124,8 @@ function update()// eska kaam hoga new coordinate ko genrate krnme ke liye
    {  score+=1;
       random=genrarteRandome() // new
    }
+//YEH PART If the snake eats food, you skip shift(), so the snake grows.
+//If not, you remove the tail, so the length stays the same and the snake moves.
    else
    {
       snakeCells.shift() // first wale cell ko remove krdega

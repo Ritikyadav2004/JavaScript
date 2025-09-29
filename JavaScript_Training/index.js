@@ -470,84 +470,85 @@
 //         console.log("Rejected");
 //     })
 
-let step1 = function () {
-    return new Promise((res, rej) => {
-        setTimeout(() => {
-            res()
-            console.log("select photo");
-        }, 4000)
-    })
-}
-
-let step2 = function () {
-    return new Promise((res, rej) => {
-        setTimeout(() => {
-            res();
-            console.log("Caption");
-        }, 3000)
-    })
-}
-
-let step3 = function () {
-    return new Promise((res, rej) => {
-        setTimeout(() => {
-            res();
-            console.log("Post");
-        }, 2000);
-    })
-}
-
-let step4 = function () {
-    return new Promise((res, rej) => {
-        setTimeout(() => {
-            res();
-            console.log("comment");
-        }, 1000);
-    })
-}
-
-let step5 = function () {
-    return new Promise((res, rej) => {
-        setTimeout(() => {
-            res();
-            console.log("Rediting");
-        }, 1000);
-    })
-}
-
-// 2nd way of printing
-step1().then(() => {
-    step2().then(() => {
-        step3().then(() => {
-            step4().then(() =>
-        {
-                step5().then(()=>{})
-        })
-    })
-});
-})
-
-
-// synchronus method time dependent work happen here
-// function call() {
-//     step1()//4 second
-//     step2()//3 second // call first
+// let step1 = function () {
+//     return new Promise((res, rej) => {
+//         setTimeout(() => {
+//             res()
+//             console.log("select photo");
+//         }, 4000)
+//     })
 // }
 
-// // third way of printing solve the problem of .then() .cathc()
-// //async await always work in pair
-// 3rd way of printing 
-async function call() {
-    await step1();
-    await step2();
-    await step3();
-    await step4();
-    await step5();
-}
-// call();
-// neeche wala kyu aese print kr raha he 
-let  promise = new Promise(()=>
-{
-    console.log("Message inside promises")
-})
-console.log("Message");
+// let step2 = function () {
+//     return new Promise((res, rej) => {
+//         setTimeout(() => {
+//             res();
+//             console.log("Caption");
+//         }, 3000)
+//     })
+// }
+
+// let step3 = function () {
+//     return new Promise((res, rej) => {
+//         setTimeout(() => {
+//             res();
+//             console.log("Post");
+//         }, 2000);
+//     })
+// }
+
+// let step4 = function () {
+//     return new Promise((res, rej) => {
+//         setTimeout(() => {
+//             res();
+//             console.log("comment");
+//         }, 1000);
+//     })
+// }
+
+// let step5 = function () {
+//     return new Promise((res, rej) => {
+//         setTimeout(() => {
+//             res();
+//             console.log("Rediting");
+//         }, 1000);
+//     })
+// }
+
+// // 2nd way of printing
+// step1().then(() => {
+//     step2().then(() => {
+//         step3().then(() => {
+//             step4().then(() =>
+//         {
+//                 step5().then(()=>{})
+//         })
+//     })
+// });
+// })
+
+
+// // synchronus method time dependent work happen here
+// // function call() {
+// //     step1()//4 second
+// //     step2()//3 second // call first
+// // }
+
+// // // third way of printing solve the problem of .then() .cathc()
+// // //async await always work in pair
+// // 3rd way of printing 
+// async function call() {
+//     await step1();
+//     await step2();
+//     await step3();
+//     await step4();
+//     await step5();
+// }
+// // call();
+// // neeche wala kyu aese print kr raha he 
+// let  promise = new Promise(()=>
+// {
+//     console.log("Message inside promises")
+// })
+// console.log("Message");
+
