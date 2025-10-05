@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding</title>
+    <style>
+       *{
+                margin: 0;
+                padding: 0;
+            }
+            .padded
+            {
+                height: 50px;
+                width: 50px;
+                padding: 20px ;
+                background-color: lightgreen;
+                
+                justify-content: center;
+                margin: 10px;
+                border: 2px solid black;
+                border-radius: 50%;
+                /* border-radius : 20% 20% 50% 50% ; */
+                /* border-radius : 20% 50% 20% 50% ; */
+                display: flex ;
+                justify-content: center ;
+                align-items: center;
+                box-sizing: content-box;
+            }
+#first
+{   
+    height: 50px;
+    width: 50px;
+    /* margin: 10px 10px 10px 10px; */
+    background-color: slateblue;
+    
+}
+#second
+{
+    height: 50px;
+    width:50px;
+     /* margin: 10px ; */
+    background-color: coral;
+}
+    </style>
+</head>
+<body>
+    <div id="first" class="padded">
+         first
+    </div>
+
+    <div id="second" class="padded">
+        second
+    </div>
+
+</body>
+</html>
