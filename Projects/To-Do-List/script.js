@@ -6,7 +6,7 @@ function addTask()
 {
     if(inputBox.value==='')
     { 
-        alert("Enter Some data")
+        alert("Enter Task data")
 
     }
     else{
@@ -15,12 +15,12 @@ function addTask()
         li.innerHTML =inputBox.value;
         listContainer.appendChild(li);
 
-        let span = document.createElement('span');
+        let span = document.createElement('span'); //full box size occupie nhi krta jitni requirment utni 
         span.innerHTML = '\u00d7'// code for cross symbole
         li.appendChild(span);
     }
-    inputBox.value="";
-    saveTask();
+    inputBox.value=""; // after adding task it should be removed from its container
+    saveTask(); 
 }
 
 listContainer.addEventListener("click",function(e)
