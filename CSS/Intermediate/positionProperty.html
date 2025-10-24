@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        *
+        {
+            background-color: #afaeae;
+            margin: 0%;
+            padding: 0%;
+             
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .box
+        {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(0, 0, 106);
+            margin: 3px;
+            color: white;
+            
+
+        }
+        #div1
+        {   
+            margin-right: 200px;
+            position: static;
+        }
+        #div2
+        {
+            position: relative;
+            margin-left: 20px;
+            margin-top: 200px;
+        }
+        #div3
+        {
+            position: fixed;
+            margin: 300px;
+        }
+        #div4
+        {
+            position: absolute;
+            margin: 800px;
+        }
+    </style>
+    
+</head>
+<body>
+<div id="div1"  class="box"> static</div>
+<div id="div2" class="box"> relative</div>
+<div id="div3" class="box"> fixed</div>
+<div id="div4" class="box"> absolute</div>
+</body>
+</html>

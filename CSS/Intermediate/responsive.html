@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Relative Unit</title>
+    <style>
+        *{  
+            margin: 0;
+            padding: 0;
+            color: whitesmoke;
+            background-color: #9d9090;
+            font-size: 5px;
+           
+        }
+        #firstBox
+        {   
+            background-color: red;
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            font-size: 15px;
+        }
+        #secondBox
+        {   
+            /* display: inline-block; */
+            height: 60%;
+            width: 50%;
+            /* font-size: 4em; apne parents kaa*/ 
+            font-size: 4rem;  /*root elemnt ka %*/
+            /* font-size: 20px; */
+            background-color: rgb(42, 21, 201);
+        }
+        #viewPort
+        {
+            height:30vh;
+            width:25vw;
+            background-color: black;
+            font-size: 2em;
+        }
+        #container
+        {
+            background-color: black;
+            width:25vw;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="firstBox">
+        First Box
+        <!-- <div id="secondBox">
+            Second Box , Div
+        
+        </div> -->
+      <br>
+       <div id="container">
+         <span id="viewPort">
+            this is for <br>understanding <br>view port
+        </span>
+       </div>
+    </div>
+   
+</body>
+</html>

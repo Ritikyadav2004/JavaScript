@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 6</title>
+    <style>
+        *
+        {
+            margin:0;
+            padding: 0;
+        }
+   nav a{
+    text-decoration: none;
+   }
+   header
+   {
+       background-color: beige;
+   }
+   nav{
+    
+    font-size: xx-large;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    padding-top: 10px;
+   }
+#imageContanier
+{   display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 150px;
+}
+   img{
+    height: 100px;
+    border: 1px solid black;
+   }
+   #boxContainer
+   {      margin-top: 2px;
+          border: 2px solid black;
+          display: flex;
+          justify-content: space-around;
+          height: 120px;
+          width: 350px;
+   }
+   #box2
+   {
+    flex-grow: 1;
+    flex-shrink: 2;
+   }
+   .box
+   {
+    height: 75px;
+    width: 75px;
+    border: 1px solid black;
+    margin: 6px;
+    flex-shrink: 0;
+   
+   }
+
+   #mediaBox
+   {
+    height: 50px;
+    width: 50px;
+    background-color:rgb(230, 250, 235);
+    border: 1px solid rgb(168, 168, 168);
+
+   }
+   @media screen and (min-width:300px) and (max-width:400px) {
+    #mediaBox
+    {
+        background-color: red;
+        color: white;
+    }
+   }
+   @media screen and (min-width:400px) {
+    #mediaBox
+    {
+        background-color: blue;
+        color: lavender;
+    }
+   }
+
+   
+    </style>
+</head>
+<body>
+    <header>l
+        <nav>
+            <a href="">Home</a>
+            <a href="">Product</a>
+            <a href="">Contact</a>
+            <a href="">Help</a>
+        </nav>
+    </header>
+
+    <main>
+                <div id="imageContanier">
+                    <img src="image.jpg" alt="">
+                </div>
+
+                <div id="boxContainer">
+                    <div id="box1" class="box">Box1</div>
+                    <div id="box2" class="box">Box2</div>
+                    <div id="box3" class="box">Box3</div>
+                </div>
+    <br> <br><hr>
+                <div id="mediaBox">
+                    Media Box
+                </div>
+    </main>
+
+</body>
+</html>
