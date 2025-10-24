@@ -136,11 +136,11 @@
 // para.remove();
 // newHeading.remove();
 
-//craete a button iof red backhround and white color
+//craete a button of red background and white color
 // let button = document.createElement("button");
 // button.innerText="click me"
 // button.style.backgroundColor="red";
-// button.style.color="while"
+// button.style.color="white"
 // console.log(button);
 // let body = document.querySelector("body");
 // body.prepend(button)

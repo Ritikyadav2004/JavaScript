@@ -82,7 +82,7 @@
 //     following:"4",
 //     name :"Shradha Khapra",
 //     Profession:"Entrepreneur",
-//     Bio:"Apna College | ex-Micrsoft , DRDO To educate someone is the highest privilege",
+//     Bio:"Apna College | ex-Micrsoft , DRDO, To educate someone is the highest privilege",
 
 // }
 // console.log(profile);
@@ -139,7 +139,7 @@
 // }
 
 //question for a given arr with 5 item ->[250,645,300,900,50]
-//all item have 1-% discouhnt pff chnage the array ton stor final price
+//all item have % discouhnt pff chnage the array ton stor final price
 // let OriginalPrice=[250,645,300,900,50];
 // let NewPrice = [];
 // //formula used --> newPrice= originalprice -(originalPrive/10)
@@ -330,7 +330,7 @@
 
 // alert("hey")
 // window.console.log("Hi there")
-//DOM (document obhect model)
+//DOM (document object model)
 
 // console.log(document);
 // console.dir(document.body.childNodes[1]);

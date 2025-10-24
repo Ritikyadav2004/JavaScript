@@ -320,6 +320,18 @@ function getdata(dataid)
 
 // function api()
 // {
+//     return new Promise((resolve,reject)=>
+//     {
+//         setTimeout(()=>
+//         {
+//                console.log("Receieved");
+//                resolve(200);
+//         },2000)
+//     })
+// }
+
+// function api()
+// {
 //     return new Promise((resolve, reject)=>
 //     {
 //         setTimeout(()=>
@@ -448,10 +460,10 @@ function getdata(dataid)
 // })();
 
 //2nd way
-// (()=>
-// {
+(()=>
+{
 
-// })();
+})();
 
 //3rd way
 // (async ()=>
