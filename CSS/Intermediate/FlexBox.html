@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 10px;
+        }
+        #container
+        {   height: 600px;
+            width: 600px;
+            border: 2px solid black;
+            padding: 10px;
+            background-color: antiquewhite;
+            flex-direction: row;
+            display: flex;
+            flex-direction: row-reverse;
+            /* flex-direction: column;
+            flex-direction: column-reverse; */
+        }
+        .box
+        {
+            height: 100px;
+            width: 628px; /* item container ke bahar nhi jate */
+            border: 2px solid black;
+            margin: 5px;
+            background-color: blue;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+            
+        }
+        header{
+            text-align: center;
+        }
+                       
+    
+    </style>
+</head>
+<body>
+   <header>
+     <h1>Flex box is a one dimension layout method for arrenging items in a row or cloulmn items flex(expend) to fill addiionl space or shrink to fit into smaller space</h1>
+     <br>
+     <h2>Flex container</h2>
+   </header>
+    <div id="container">
+        <div id ="box1"class="box">box1</div>
+        <div id ="box2" class="box">box2</div>
+        <div id ="box3" class="box">box3</div>
+        <div id ="box4" class="box">box4</div>
+    </div>
+    
+
+</body>
+</html>
