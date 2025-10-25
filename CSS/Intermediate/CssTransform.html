@@ -1,0 +1,49 @@
+<!-- 
+ This property of css allow modification of an element shape and position.
+ It can perform operation like rotate scale and translate does not effect the layout of surrounding elements.
+  used to create visual effect and transformation 
+  operation
+  roatate-simply wgi meaning he 
+  scale chhota and bada krna 
+  skew tircha  pichkan dena  
+  translate  uski jagah change kr dena
+  -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+       
+.box
+{
+    
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 123, 224);
+    border: 2px solid black;
+    display: flex;
+    align-self: flex-end;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    border-radius: 5px;
+    /* transform: rotate(45deg); */
+    transition: all 1s ease-in ;
+    
+}
+.box:hover{
+    transform: rotatex(45deg);
+    transform: rotatez(45deg);
+    transform: scale(2);
+    transform: translate(-50px);
+     transform: translate(50px, 50px);
+
+}
+    </style> 
+  </head>
+  <body>
+    <div class="box">Rotate</div>
+  </body>
+  </html>

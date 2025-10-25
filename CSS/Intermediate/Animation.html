@@ -1,0 +1,64 @@
+<!-- 
+ This property of css allow modification of an element shape and position.
+ It can perform operation like rotate scale and translate does not effect the layout of surrounding elements.
+  used to create visual effect and transformation 
+  operation
+  roatate-simply wgi meaning he 
+  scale chhota and bada krna 
+  skew tircha  pichkan dena  
+  translate  uski jagah change kr dena
+  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+
+
+            @keyframes ghummakad {
+                /* from{left:10px}
+                to{left:200px} */
+
+                0%{left:10px}
+                50%{left:50px}
+                60%{left:160px}
+                100%{left:200px}
+            }
+        .box {
+
+            height: 70px;
+            width: 70px;
+            background-color: rgb(255, 123, 224);
+            border: 2px solid black;
+            display: flex;
+            align-self: flex-end;
+            position: relative;
+            top: 10px;
+            left: 10px;
+            border-radius: 5px;
+       
+            animation-name: ghummakad;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: 5;
+            animation-iteration-count:infinite ;
+            animation-direction: reverse;
+            animation-direction: alternate-reverse;
+            animation-direction: alternate ;
+            /* animation: ghummakad 2s ease-in-out 1 infinite alternate ; */
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">Animate</div>
+</body>
+
+</html>

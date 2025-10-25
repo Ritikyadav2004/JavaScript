@@ -1,1 +1,54 @@
-<!--  -->
+<!-- 
+ CSS transition is a property that enables smooth animation between changes in CSS properties value 
+ things availbel to add
+
+ -->
+ <!-- Comman example hover active first-child -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property</title>
+    <style>
+        .pseudo
+        {
+            height: 25px;
+            width: 150px;
+            background-color: forestgreen;
+            color :white;
+            border: 2px solid black;
+            border-radius: 20px;
+
+
+             transition-property: all; /*Sare elemnt change hona choye  */
+
+             /* transition-duration: 1s;
+             transition-timing-function: ease-in-out;
+             transition-timing-function: steps(5);
+             transition-delay: 0s; */
+
+
+             /* In one line we can  */
+             transition: all 1s ease-in-out 0s;
+
+
+        }
+        .pseudo:hover
+        {   
+             height: 30px;
+            width: 160px;
+            background-color: rgb(255, 0, 0)
+        }
+        .pseudo:active
+        {
+            height: 30px;
+            width: 160px;
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+ </head>
+ <body>
+    <button class="pseudo">Learning Pseduo</button>
+ </body>
+ </html>
