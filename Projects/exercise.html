@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn
+        {
+              background-color: rgb(255, 0, 0); 
+              color: white;
+              height: 40px; 
+              width: 150px;
+              font-size: 30px;
+              border: 2px solid black;
+
+              border-radius: 5px;
+        }
+        .doubleTheSize
+        {
+            background-color: rgb(255, 0, 0); 
+              color: white;
+              height: 80px; 
+              width: 300px;
+              font-size: 60px;
+              border: 2px solid black;
+
+              border-radius: 5px;
+        }
+
+        
+    </style>
+    
+</head>
+<body>
+
+  <h1>Hi There How Are you !</h1>
+  <button class = "btn "  >Subscribe</button>
+  <!-- onclick="setTimeout(doubletthesize,,2000)" -->
+
+
+
+
+
+    <script >
+
+//          let btn = document.querySelector('.btn');
+//          btn.addEventListener('click',event=>
+//             {
+// setTimeout(doublesize,2000)
+//             }
+//          )
+       
+//        function doublesize()
+//        {
+//                 let btn = document.querySelector('.btn');
+//                 btn.classList.add('doubleTheSize')
+
+//}
+
+
+let arr = [1,2,3,4,5,6,7,8,9,10]
+sum=0;
+arr.forEach(num=>sum+=num)
+console.log(sum);
+
+
+let sqr = arr.map(num=>num*num)
+console.log(sqr);
+
+    </script>
+</body>
+</html> 
