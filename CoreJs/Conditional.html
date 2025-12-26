@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Learning Core JavaScript</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      let count=0;
+
+       function tableOf() {
+        const num = parseInt(document.getElementById("number").value);
+        if (isNaN(num)) {
+            alert("Please enter a valid number.");
+            return;
+          }
+          for(let i=1;i<11;i++)
+         {
+            document.write("Element "+ num*i+"<br>");
+            
+         }
+       }
+
+
+        
+    </script>
+    <label for="number">Number:</label>
+    <input type="number" id="number">
+    <button onclick="tableOf()">Table of</button>
+    <button onclick="count++">Count++</button>
+    
+    <p></p>
+    
+  </body>
+</html>
