@@ -15,7 +15,7 @@ const result5=number.map(num=>{
     {
         return num*2;
     }
-    return num;
+    return num;// esko ek baar remove krke chalana ager kuch nhi mila to map undefined return krta he 
 })
 
 
