@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning</title>
+    <script>
+        function validator()
+        {
+            let name= document.form.name.value;
+            let phone=document.form.phone.value;
+            if(name.length<2)
+        {
+            alert("Type Correct Name")
+            document.form.name.focus();
+            return false;
+        }
+        var pattern=/^[0-9]{10}$/;
+        if(!phone.match(pattern))
+        {
+            alert("Wrong Mobile Number ");
+            document.form.phone.focus();
+            return false;
+        }
+        alert("Form Submitted Successfully");
+        return true;
+        }
+    </script>
+</head>
+<body>
+    <header><h1 style="text-align: center;">Welcome to this form pl provide your gerenel information</h1></header>
+    <main>
+        <form name="form" onsubmit="return validator()" style="align-items: center; text-align: center;">
+            Name:
+            <input type="text" name="name" placeholder="Enter Your Name">
+            <br><br>
+            Phone:
+            <input type="text" name="phone" placeholder="Enter Your Mobile Number ">
+            <br><br>
+ 
+            <input type="submit">
+        </form>
+    </main>
+</body>
+</html>
